@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      FLASK_APP: app:create_app
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+    depends_on:
+      - redis
+
+  redis:
+    image: "redis:7.4.0"
+    container_name: document_retrieval-redis
+    ports:
+      - "6379:6379"

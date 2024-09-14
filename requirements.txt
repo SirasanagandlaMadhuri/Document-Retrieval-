@@ -1,0 +1,7 @@
+Flask==2.3.0
+Flask-Caching==2.1.0
+redis==4.0.2
+requests==2.28.1
+tenacity
+scikit-learn==1.2.2
+numpy==1.24.3
