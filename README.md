@@ -1,7 +1,9 @@
 Document Retrieval System
 
 This system is built using Flask as the backend framework, SQLite for database management, and Redis for caching to optimize performance. The backend handles API requests to retrieve relevant news articles based on query text and supports user rate limiting.
+
 Components
+
 1. API Design
 	/health: Returns a random response to check if the API is active.
 	/search: Accepts a user query and returns a list of top results based on specified parameters: text, top_k, and threshold.
